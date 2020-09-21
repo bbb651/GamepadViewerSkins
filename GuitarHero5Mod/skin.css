@@ -134,7 +134,7 @@ start and select buttons. */
 	left: 0;
 	top: 0;
 	display: none;
-	background-position: 946px 0;
+	background-position: 0 0;
 }
 .custom .face.up {
 	background-position: 473px 0;
