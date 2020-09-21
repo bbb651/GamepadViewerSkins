@@ -1,0 +1,149 @@
+/*BEGIN Guitar Hero 5 Controller Styling*/
+/*This class defines the base attributes of the skin*/
+.controller.custom {
+	background: url(./base.png);
+	width: 3537px;
+	height: 1165px;
+}
+.custom.disconnected {
+	/* This class shows an image when the controller is disconnected */
+	background: url(./base-disconnect.png);
+}
+/* This hides the controller's button when disconnected so only the background image remains */
+.custom.disconnected div {
+	display: none;
+}
+/* This bit of code is for the player indicator, which is represented in
+quandrants on the xbox controller. That's note what it's called on the
+PS3 controller but it'd be pointless for me to change the HTML for 
+something as pedantic as a name. */
+.custom .quadrant {
+	position: absolute;
+	background: url(./player-n.png);
+	height: 17px;
+	width: 111px;
+	top: 520px;
+	left: 2590px;
+}
+/* Since the player indicator is just a CSS sprite, we change the 
+position of the background to match the player number.
+NOTE: Player orderin starts at 0, so p0 = Player 1 */
+.custom .p0 {
+	background-position: 0 -6px;
+}
+.custom .p1 {
+	background-position: 0 -28px;
+}
+.custom .p2 {
+	background-position: 0 -49px;
+}
+.custom .p3 {
+	background-position: 0 -70px;
+}
+/* This is to size and position the containing div for the 
+start and select buttons. */
+.custom .arrows {
+	position: absolute;
+	width: 205px;
+	height: 19px;
+	top: 398px;
+	left: 3008px;
+}
+/* Setting the size and CSS sprite for the start adn select buttons */
+.custom .back,
+.custom .start {
+	background: url(./menus.png);
+	width: 147px;
+	height: 375px;
+}
+.custom .back.pressed,
+.custom .start.pressed {
+	background-position-y: -375px;
+}
+.custom .back {
+	float: left;
+	width: 80px;
+	position: absolute;
+	background-position: 0 0;
+	top: 0;
+	left: 0;
+}
+.custom .start {
+	float: right;
+	width: 67px;
+	position: absolute;
+	background-position: 67px 0;
+	top: 0;
+	left: 0;
+}
+/* Positioning and size of the container for the face buttons */
+.custom .abxy {
+	position: absolute;
+	width: 450px;
+	height: 256px;
+	top: 512px;
+	left: 850px;
+}
+/* base class used to simplify the sprite mapping */
+.custom .button,
+.custom .bumper.left {
+	position: absolute;
+	width: 90px;
+	height: 128px;
+	background: url(./face-buttons.png);
+}
+.custom .button.pressed,
+.custom .bumper.left.pressed {
+	background-position-y: -128px;
+}
+.custom .a {
+	background-position: 0 0;
+	left: -180px;
+}
+.custom .b {
+	background-position: 360px 0;
+	left: -90px;
+}
+.custom .x {
+	background-position: 270px 0;
+}
+.custom .y {
+	background-position: 180px 0;
+	left: 90px;
+}
+.custom .bumper.left {
+	background-position: 90px 0;
+	top: 512px;
+	left: 1030px;
+}
+/* Dpad possitioning and sizing */
+.custom .dpad {
+	background: url(./dpad.png);
+	background-position: 0 0;
+	position: absolute;
+	width: 473px;
+	height: 83px;
+	top: 540px;
+	left: 2415px;
+}
+.custom .face {
+	background: url(./dpad.png);
+	position: absolute;
+	width: 473px;
+	height: 83px;
+	left: 0;
+	top: 0;
+	display: none;
+	background-position: 946px 0;
+}
+.custom .face.up {
+	background-position: 473px 0;
+}
+.custom .face.down {
+	background-position: 0 0;
+}
+.custom .face.up.pressed,
+.custom .face.down.pressed {
+	display: block;
+}
+/*END Guitar Hero 5 Controller Styling*/
