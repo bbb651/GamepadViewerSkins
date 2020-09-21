@@ -125,6 +125,7 @@ start and select buttons. */
 	height: 83px;
 	top: 540px;
 	left: 2415px;
+	background-position: 946px 0;
 }
 .custom .face {
 	background: url(./dpad.png);
@@ -134,13 +135,12 @@ start and select buttons. */
 	left: 0;
 	top: 0;
 	display: none;
-	background-position: 0 0;
 }
 .custom .face.up {
-	background-position: 473px 0;
+	background-position: 0 0;
 }
 .custom .face.down {
-	background-position: 0 0;
+	background-position: 473px 0;
 }
 .custom .face.up.pressed,
 .custom .face.down.pressed {
